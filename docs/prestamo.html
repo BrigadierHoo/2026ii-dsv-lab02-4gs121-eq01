@@ -90,6 +90,25 @@
                     <input id="retiro" name="retiro" type="date" min="2026-11-22" required>
                 </p>
             </fieldset>
+            <fieldset>
+                <legend>Condiciones</legend>
+                <p>
+                    <input id="sin-adeudos" name="sin_adeudos" type="checkbox" required>
+                    <label for="sin-adeudos">Declaro que no tengo adeudos ni multas.</label>
+                </p>
+                <p>
+                    <input id="reglamento" name="reglamento" type="checkbox" required>
+                    <label for="reglamento">Acepto las
+                        <a href="index.html#renovaciones">condiciones del préstamo</a>.</label>
+                </p>
+                <p>
+                    <label for="observaciones">Observaciones (opcional)</label><br>
+                    <textarea id="observaciones" name="observaciones" rows="4" maxlength="300"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Enviar solicitud</button>
+            </p>
         </form>
     </main>
     <footer>

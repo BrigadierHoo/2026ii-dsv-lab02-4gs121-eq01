@@ -42,7 +42,27 @@
         </ul>
     </nav>
     <main id="contenido">
-        <!-- Aquí va el formulario (E03) -->
+        <h2>Solicitud de préstamo</h2>
+        <form action="/api/prestamos" method="post">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <p>
+                    <label for="nombre">Nombre Completo</label>
+                    <input id="nombre" name="nombre" type="text" required>
+                </p>
+                <p>
+                    <label for="codigo">Código de usuario</label>
+                    <input id="codigo" name="codigo" type="text" required pattern="[0-9]{8}"
+                        title="Ocho dígitos, sin letras ni espacios" inputmode="numeric">
+                </p>
+                <p>
+                    <label for="correo">Correo institucional</label>
+                    <input id="correo" name="correo" type="email" required pattern=".+@utp\.ac\.pa"
+                        title="Correo que termine en @utp.ac.pa" aria-describedby="ayuda-correo">
+                </p>
+                <p id="ayuda-correo">Use su correo institucional, que termina en @utp.ac.pa.</p>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <address>

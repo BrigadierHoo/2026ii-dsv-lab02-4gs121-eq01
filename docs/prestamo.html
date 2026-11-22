@@ -62,6 +62,34 @@
                 </p>
                 <p id="ayuda-correo">Use su correo institucional, que termina en @utp.ac.pa.</p>
             </fieldset>
+            <fieldset>
+                <legend>El libro</legend>
+                <p>
+                    <label for="titulo">Título</label>
+                    <input id="titulo" name="titulo" type="text" list="titulos" required>
+                    <datalist id="titulos">
+                        <option value="Clean Code"></option>
+                        <option value="Eloquent JavaScript"></option>
+                        <option value="HTML and CSS: Design and Build Websites"></option>
+                        <option value="Fundamentos de bases de datos"></option>
+                        <option value="Ingeniería del software"></option>
+                    </datalist>
+                </p>
+                <fieldset>
+                    <legend>Ejemplar *</legend>
+                    <input id="ej-1" name="ejemplar" type="radio" value="e1" disabled aria-describedby="ayuda-ej1">
+                    <label for="ej-1">e.1</label>
+                    <input id="ej-2" name="ejemplar" type="radio" value="e2" required>
+                    <label for="ej-2">e.2</label>
+                    <input id="ej-3" name="ejemplar" type="radio" value="e3">
+                    <label for="ej-3">e.3</label>
+                    <p id="ayuda-ej1">El e.1 no se presta: se reserva para consulta en sala.</p>
+                </fieldset>
+                <p>
+                    <label for="retiro">Fecha de retiro</label>
+                    <input id="retiro" name="retiro" type="date" min="2026-11-22" required>
+                </p>
+            </fieldset>
         </form>
     </main>
     <footer>
